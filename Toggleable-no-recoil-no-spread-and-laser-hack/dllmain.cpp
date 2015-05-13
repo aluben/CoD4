@@ -61,8 +61,6 @@ BOOL APIENTRY DllMain(HMODULE hModule, DWORD ul_reason_for_call,LPVOID IpReserve
 		CreateThread(NULL, NULL, ReadF7, NULL, NULL, NULL);
 		// Making a little beep so it's possible to hear when the hack gets enabled
 		Beep(2000,500);
-		// Create a message box
-		MessageBox(0, L"Hack succesfully injected. Press F7 to toggle the recoil, spread & laser.", L"CoD4 hack by Aluben", MB_OK);
 		return true;
 	}
 	
